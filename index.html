@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Curvas e Derivadas</title>
+    <link type="text/css" rel="stylesheet" href="style.css"></link>
+    <style>
+      body {
+        background: #0099ff;
+      }
+    	div {
+    		display: inline;
+        position: relative; 
+        left: 15%;
+        font-size: 20px;
+        margin-left: 5px;
+        font-family: Georgia;
+    	}
+    	table {
+    		width: 100%;
+    		height: 90%;
+    	}
+      canvas {
+        background: white;
+      }
+      p {
+        font-size: 15px;
+        font-family: Georgia;
+        text-align: right;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  	<div>Legenda<input type="checkbox" id="textos" checked></div>
+    <div>Pontos de controle<input type="checkbox" id="pontosControle" checked></div>
+    <div>Poligonal de controle<input type="checkbox" id="poligonalControle" checked></div>
+    <div>Curva de Bezier<input type="checkbox" id="curvaBezier" checked></div>
+    <div>Avaliações: <input type="number" id="avaliacoes" value="1000"></div>
+  	<table>
+  		<tr>
+  			<td><canvas id="canvas"></canvas></td>
+  			<td><canvas id="canvas1"></canvas></td>
+  		</tr>
+  		<tr>
+  			<td><canvas id="canvas2"></canvas></td>
+  			<td><canvas id="canvas3"></canvas></td>
+  		</tr>
+  	</table>
+    <p>Developed by <b>Alecsandro Silva</b> and <b>Victor Aguiar</b></p>
+  </body>
+  <script src="script.js"></script>
+</html>
